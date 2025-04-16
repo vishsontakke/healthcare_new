@@ -13,10 +13,13 @@
 
 <div id="wrapper">
     
-<div id="page02" onClick="popup01()"><img src="images/page02.png" alt=""/></div>
+<div id="page02" onClick="popup01()"><img src="images/page02.jpeg" alt=""/></div>
 	
 	
-<div id="page02_popup01" onClick="popup01_close()"><img src="images/page02_popup01.png" alt=""/></div>
+<div id="page02_popup01" onClick="popup01_close()"><img src="images/page02_popup01.jpeg" alt=""/></div>
+<div id="page02_popup02" onClick="popup02_close()"><img src="images/page02_popup02.jpeg" alt=""/></div>
+<div id="page02_popup03" onClick="popup03_close()"><img src="images/page02_popup03.jpeg" alt=""/></div>
+
 	
 <a href="index.html"><div id="arrow_left"><img src="images/arrow_left.png" alt=""/></div></a>
 <a href="page03.html"><div id="arrow_right"><img src="images/arrow_right.png" alt=""/></div></a>
@@ -39,6 +42,22 @@ document.getElementById("page02_popup01").style.display='block';
 	
 function popup01_close() {
 document.getElementById("page02_popup01").style.display='none';
+}
+
+function popup02() {
+document.getElementById("page02_popup02").style.display='block';
+}
+    
+function popup02_close() {
+document.getElementById("page02_popup02").style.display='none';
+}
+
+function popup03() {
+document.getElementById("page02_popup03").style.display='block';
+}
+    
+function popup03_close() {
+document.getElementById("page02_popup03").style.display='none';
 }
 	
 	
