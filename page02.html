@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hyperlact</title>
+<title>Glycheck-M</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 </head>
@@ -13,13 +14,51 @@
 
 <div id="wrapper">
     
-<div id="page02" onClick="popup01()"><img src="images/page02.jpeg" alt=""/></div>
-	
-	
-<div id="page02_popup01" onClick="popup01_close()"><img src="images/page02_popup01.jpeg" alt=""/></div>
-<div id="page02_popup02" onClick="popup02_close()"><img src="images/page02_popup02.jpeg" alt=""/></div>
-<div id="page02_popup03" onClick="popup03_close()"><img src="images/page02_popup03.jpeg" alt=""/></div>
+<div id="page02"><img src="images/page02.jpeg" alt=""/></div>
 
+<div class="container text-center">
+    <!-- Buttons to Trigger Modals -->
+    <button class="btn popup-btn popup01" data-bs-toggle="modal" data-bs-target="#modal1"></button>
+    <button class="btn popup-btn popup02" data-bs-toggle="modal" data-bs-target="#modal2"></button>
+    <button class="btn popup-btn popup03" data-bs-toggle="modal" data-bs-target="#modal3"></button>
+</div>
+
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body text-center">
+          <img src="images/page02_popup01.jpeg" class="img-fluid" alt="Popup 1 Image">
+        </div>
+      </div>
+    </div>
+</div>
+  
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body text-center">
+            <img src="images/page02_popup02.jpeg" class="img-fluid" alt="Popup 2 Image">
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body text-center">
+            <img src="images/page02_popup03.jpeg" class="img-fluid" alt="Popup 3 Image">
+        </div>
+        </div>
+    </div>
+</div>
 	
 <a href="index.html"><div id="arrow_left"><img src="images/arrow_left.png" alt=""/></div></a>
 <a href="page03.html"><div id="arrow_right"><img src="images/arrow_right.png" alt=""/></div></a>
@@ -31,38 +70,8 @@
     
 </div>
 
+<script src="js/bootstrap.bundle.min.js"></script>
 
-
-    
-<script>
-	
-function popup01() {
-document.getElementById("page02_popup01").style.display='block';
-}
-	
-function popup01_close() {
-document.getElementById("page02_popup01").style.display='none';
-}
-
-function popup02() {
-document.getElementById("page02_popup02").style.display='block';
-}
-    
-function popup02_close() {
-document.getElementById("page02_popup02").style.display='none';
-}
-
-function popup03() {
-document.getElementById("page02_popup03").style.display='block';
-}
-    
-function popup03_close() {
-document.getElementById("page02_popup03").style.display='none';
-}
-	
-	
-
-</script>
 
 	
 </body>
