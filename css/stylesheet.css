@@ -67,104 +67,6 @@ img
     top: 0px;
 }
 
-#page02_copy01
-{
-	width:50%;
-	height:30%;
-    position: relative;
-	float: left;
-	margin: 20% 0 0 10%;
-}
-
-#page02_copy02
-{
-	width:14%;
-	height:auto;
-    position: relative;
-	float: left;
-	margin: 53% 0 0 0%;
-}
-
-#page02_copy03
-{
-	width:14%;
-	height:auto;
-    position: relative;
-	float: left;
-	margin: 53% 0 0 0%;
-}
-
-#page02_copy04
-{
-	width:14%;
-	height:auto;
-    position: relative;
-	float: left;
-	margin: 53% 0 0 0%;
-}
-
-#page02_popup
-{
-	width:80%;
-	height:auto;
-    position: relative;
-	float: left;
-	margin: 5% 0 0 10%;
-}
-
-#page02_popup01
-{
-	width:100%;
-	height:auto;
-    position: absolute;
-	display: none;
-	z-index: 100;
-}
-
-#page02_popup02
-{
-	width:100%;
-	height:auto;
-    position: absolute;
-	display: none;
-	z-index: 100;
-}
-
-#page02_popup03
-{
-	width:100%;
-	height:auto;
-    position: absolute;
-	display: none;
-	z-index: 100;
-}
-
-#page02_popup04
-{
-	width:100%;
-	height:auto;
-    position: absolute;
-	display: none;
-	z-index: 100;
-}
-
-#page02_popup04_01
-{
-	width:100%;
-	height:auto;
-    position: absolute;
-	z-index: 100;
-}
-
-#page02_popup04_02
-{
-	width:100%;
-	height:auto;
-    position: absolute;
-	z-index: 100;
-}
-
-
 
 #page03
 {
@@ -176,15 +78,6 @@ img
 }
 
 #page04
-{
-	width:100%;
-	height:auto;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-#page05
 {
 	width:100%;
 	height:auto;
@@ -269,4 +162,50 @@ iframe
 }
   
     
+}
+
+.btn {
+	position: relative;
+	z-index: 99;    
+}
+.btn-close, .btn-close:hover {
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	z-index: 999;
+	font-size: 25px;
+	background-color: white;
+	border-radius: 50%;
+	padding: 15px;
+	opacity: 1;
+}
+.modal-dialog {
+	max-width: 90%; 
+}
+.modal-content {
+	border: none; 
+}
+.modal-backdrop.show {
+	backdrop-filter: blur(150px);
+	background-color: rgba(255, 255, 255); 
+}
+
+.btn.popup-btn:focus,
+.btn.popup-btn:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+.popup-btn {
+	position: absolute;
+    bottom: -40%;
+    width: 20%;
+    height: 15%;
+}
+.popup01 {
+    left: 14%;
+}
+.popup02 {	
+    left: 39%;
+}.popup03 {
+    left: 65%;
 }
